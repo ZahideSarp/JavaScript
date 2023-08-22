@@ -21,7 +21,33 @@ const startGame = () => {
     txtResult.innerText = "";
 };
 
-const resetGame = () => { };
+const resetGame = () => {
+    btnGuess.classList.add("d-none");
+    txtNum.setAttribute("disabled", true);
+    btnStart.innerText = "OYUNU BAŞLAT";
+};
+
+const guessNumber = () => {
+    const userNumber = +txtNum.value;
+
+    if (!userNumber || isNaN(userNumber) || userNumber < minRandomNumber || userNumber > maxRandomNumber) {
+        txtResult.innerText = `Lütfen ${minRandomNumber} ile ${maxRandomNumber} arasında bir sayı giriniz!`;
+        return;
+    }
+
+    if (userNumber === randomNumber) {
+        txtResult.innerText = `Tebrikler! Doğru sayıyı buldunuz!`;
+        txtResult.classList.replace("text-danger", "text-success");
+        resetGame();
+    } else if (userNumber > randomNumber) {
+        txtResult.innerText = `Daha küçük bir sayı giriniz!`;
+    } else {
+        txtResult.innerText = `Daha büyük bir sayı giriniz!`;
+    }
+
+    txtNum.value = "";
+    txtNum.focus();
+};
 
 
 const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
