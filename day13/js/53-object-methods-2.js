@@ -16,7 +16,11 @@ Object.assign(car1, car2);
 console.log(car1);
 console.log(car2);
 console.log(car1 === car2);
-
+/*
+sol baştaki nesnenin içine soldan sağa olacak şekilde birleştiriyor,
+ aynı keyler varsa en son atanan geçerli oluyor ve 2 veya daha fazla 
+ nesne tek nesnede birleştirilebiliyor
+*/
 const car3 = Object.assign(car1, car2);
 console.log(car3);
 console.log(car1 === car3);
@@ -27,7 +31,6 @@ console.log(car1 === car3);
 const car5 = {
     new: "new"
 }
-
 
 const car4 = Object.assign({}, car1, car5);
 console.log(car4);

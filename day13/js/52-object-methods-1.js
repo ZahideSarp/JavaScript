@@ -13,7 +13,7 @@ adam.lastName = 'Smith';
 console.log(adam);
 console.log(person);
 
-const john = Object.create(person);
+const john = Object.create(person);//prototype konusunu arastır!!!
 console.log(john.firstName);
 
 john.firstName = 'John';
