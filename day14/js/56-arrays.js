@@ -9,7 +9,7 @@ courses[0] = "Python";
 console.log(courses[0]);
 
 // courses = ["Python", "CSS", "JS", "PHP", "Java"]; // TypeError: Assignment to constant variable.
-Collapse
+
 
 
 
