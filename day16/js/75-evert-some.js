@@ -21,3 +21,5 @@ const someNegative = prices.some((price) => {
 });
 
 console.log(someNegative); // false;
+
+bgAXWÇFLCLSÇYNGA
