@@ -12,3 +12,4 @@ console.log(paragraphElements);
 console.log(paragraphElements[0]);
 
 paragraphElements[0].innerHTML = "Merhabalar";
+console.log(paragraphElements[1]);
