@@ -9,8 +9,8 @@ const loadData = () => {
 
     for (let ulke of ulkeler) {
         console.log(ulke);
-        // console.log(ulke.cca3);
-        // console.log(ulke.name.common);
+         //console.log(ulke.cca3);
+        //console.log(ulke.name.common);
         options += `<option value="${ulke.cca3}">${ulke.name.common}</option>`;
     }
     const selectEl = document.querySelector("#countriesList");

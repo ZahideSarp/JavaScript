@@ -51,7 +51,7 @@ arr(sehirler);
 
 btnRemoveFirstEl.addEventListener("click", () =>{
 sehirler.shift();
-
+arr(sehirler);
 });
 
 btnRemoveAllEl.addEventListener("click", () =>{

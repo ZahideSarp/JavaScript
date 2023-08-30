@@ -17,6 +17,7 @@ for (let index in hayvanlar) {
 for (let hayvan of hayvanlar) {
     console.log(hayvan);
     console.log(hayvanlar.indexOf(hayvan));
+   
 };
 
 for (let [index, hayvan] of hayvanlar.entries()) {
